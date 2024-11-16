@@ -1,13 +1,7 @@
 import random
 values = [-15, -4, -2, -7, 0, 3, 5, 12, 7]
-height = int(input("Введи высоту матрицы:"))
-width = int(input("Введи длину матрицы:"))
-#Проверка высоты
-if height>8 or height<4:
-    print("Неправильный размер матрицы")
-#Проверка длины  
-if width>8 or width<4:
-    print("Неправильный размер матрицы")
+height = random.randint(4,8)
+width = random.randint(4,8)
 #Составление матрицы
 matrix =[[random.choice(values) for i in range(width)] for k in range(height)] 
 for arr in matrix:
